@@ -1,0 +1,152 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    background-color: rgb(2, 6, 7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: rgb(174, 229, 247);
+    width: 340px;
+    height: 373px;
+    padding: 5px 25px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    box-shadow: 20px 20px 20px grey;
+}
+
+.container h1 {
+    font-family: 'Californian FB', bold;
+    font-size: 33px;
+    font-weight: 700;
+    text-align: center;
+    user-select: none;
+    letter-spacing: 1px;
+}
+
+
+
+#p1 {
+    font-family: system-ui;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inputs {
+    display: flex;
+    justify-content: space-between;
+    gap: 7px;
+}
+
+.inputs div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 165px;
+}
+
+#result,
+#inputValue {
+    height: 40px;
+    font-size: 25px;
+    border: 1px solid gray;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    outline: none;
+    padding: 0 10px;
+    font-weight: 600;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#result:focus,
+#inputValue:focus {
+    height: 40px;
+    font-size: 25px;
+    border: 1px solid rgb(130, 130, 255);
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    outline: none;
+    padding: 0 10px;
+}
+
+#btn {
+    height: 45px;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#btn:active {
+    height: 45px;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: rgb(108, 108, 255);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.resultss {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#type {
+    height: 41px;
+    font-size: 25px;
+    border: 1px solid gray;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    outline: none;
+    padding: 0 10px;
+}
+
+#type:focus {
+    height: 41px;
+    font-size: 25px;
+    border: 1px solid rgb(130, 130, 255);
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    outline: none;
+    padding: 0 10px;
+}
+
+label {
+    font-size: 17px;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(247, 83, 83);
+}
+
+@media only screen and (max-width: 400px) {
+    .container {
+        transform: scale(0.9);
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .container {
+        transform: scale(0.8);
+    }
+}
